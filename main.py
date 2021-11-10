@@ -4,7 +4,6 @@ print(" ")
 print("------------------------- W E L C O M E ! -----------------------")
 print(" ")
 
-from tabulate import tabulate
 
 food = ["Fish Cutlet", "Chicken Cutlet", "Fish Bun", "Fish Roti", "Patties", "Fish Rolls", "Pan Rolls", "Burger", "Sausages Bun"]
 prices = [25.00,30.00,45.00,20.00,50.00,55.00,50.00,45.00]
