@@ -73,7 +73,7 @@ def c_register():
     n = input(" "*20+"Your Name: ")
     p = input(" "*20+"Your Password: ")
     success = True
-    file = open('files'+navigator_symbol+'customers', 'a')
+    file = open('files'+navigator_symbol+'customer', 'a')
     file.write(n+" - "+p+"\n")
     print(" ")
     if(success):
@@ -88,7 +88,7 @@ def c_login():
     u = input(" "*20+"Username: ")
     p = input(" "*20+"Password: ")
     success = False
-    file = open('files'+navigator_symbol+'customers', 'r')
+    file = open('files'+navigator_symbol+'customer', 'r')
     for i in file:
         a,b = i.split(" - ")
         b = b.strip()
@@ -219,7 +219,7 @@ def order_menu():
             print("\n" * 1 + "ERROR: Invalid Input (" + str(input_1) + "). Something Went Wrong ,Try again!")
 
 def food_file_reader():                                                                        
-    file_foods = open('files'+navigator_symbol+'list_foods', 'r') 
+    file_foods = open('files'+navigator_symbol+'list_food', 'r') 
     for i in file_foods: 
         list_foods.append(str(i.strip())) 
     file_foods.close()
@@ -426,7 +426,7 @@ def ItemAdd():
     s = input("selling Price : ")
     print(" ")
     success = True
-    file_foods = open('files'+navigator_symbol+'list_foods', 'a') 
+    file_foods = open('files'+navigator_symbol+'list_food', 'a') 
     file_foods.write("\n"+f+" "+"Rs "+s+".00")
     print(" ")
     file_foods.close()
@@ -437,7 +437,7 @@ def ItemAdd():
         print("Wrong input")
 
 def Cus_file_reader():                                                                        
-    file_cus = open('files'+navigator_symbol+'customers', 'r') 
+    file_cus = open('files'+navigator_symbol+'customer', 'r') 
     for i in file_cus: 
         list_cus.append(str(i.strip())) 
     file_cus.close()
